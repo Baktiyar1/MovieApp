@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="4dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginRight="4dp"
+    android:layout_marginBottom="8dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/cv_iv_movie_poster"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_launcher_background"
+            android:contentDescription="@string/todo">
+        </ImageView>
+
+        <com.vaibhavlakhera.circularprogressview.CircularProgressView
+            android:id="@+id/progressView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="end"
+            app:animate="true"
+            app:animateDuration="600"
+            app:fillColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline51"
+            app:progressColor="@color/green"
+            app:progressInterpolator="@android:anim/accelerate_decelerate_interpolator"
+            app:progressTextColor="@color/white"
+            app:progressTextEnabled="true"
+            app:progressTextSize="14sp"
+            app:progressTextType="percent"
+            app:progressWidth="5dp"
+            app:startAngle="270"
+            app:totalColor="@color/black"
+            app:totalValue="100"
+            app:totalWidth="8dp" />
+
+        <TextView
+            android:id="@+id/cv_movie_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="4dp"
+            android:text="@string/movie"
+            android:textSize="12sp"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/cv_movie_release_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="4dp"
+            android:text="@string/release_date"
+            android:maxLength="4"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

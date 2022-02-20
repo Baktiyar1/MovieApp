@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/topFragment">
+
+    <fragment
+        android:id="@+id/topFragment"
+        android:name="com.baktiyar11.movieapp.data.fragments.TopFragment"
+        android:label="top_fragment"
+        tools:layout="@layout/top_fragment" >
+        <action
+            android:id="@+id/action_topFragment_to_movieDetailsFragment"
+            app:destination="@id/movieDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/movieDetailsFragment"
+        android:name="com.baktiyar11.movieapp.data.fragments.MovieDetailsFragment"
+        android:label="movei_details_fragment"
+        tools:layout="@layout/movei_details_fragment" />
+</navigation>

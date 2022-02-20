@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">MovieApp</string>
+    <string name="todo">TODO</string>
+    <string name="movie">Movie</string>
+    <string name="sub_title">Sub title</string>
+    <string name="movie_info">Movie info</string>
+    <string name="release_date">Release date:</string>
+    <string name="rating">Rating:</string>
+    <string name="runtime">Runtime:</string>
+    <string name="budget">Budget:</string>
+    <string name="revenue">Revenue:</string>
+    <string name="overview">Overview:</string>
+
+    <string-array name="cotigories">
+        <item>Top rated</item>
+        <item>Popular</item>
+        <item>Upcoming</item>
+        <item>Now playing</item>
+    </string-array>
+</resources>
